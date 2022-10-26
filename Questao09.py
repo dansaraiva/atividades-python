@@ -16,15 +16,15 @@ pesoSuperior90alturaInferior150 = 0
 somaIdade = 0
 idade10e30Altura190 = 0
 
-for n in range(1, 11):
-    print(f"Dados para {n}ª pessoa:")
+for n in range(0, 10):
+    print(f"Dados para {n+1}ª pessoa:")
     idade = int(input("Informe a idade: "))
     peso = float(input("Informe o peso: "))
     altura = float(input("Informe a altura: "))
 
     os.system("cls")
-    somaIdade += idade
-    if peso > 90 and altura < 1.50:
+    somaIdade = somaIdade + idade
+    if (peso > 90) and (altura < 1.50):
         pesoSuperior90alturaInferior150 += 1
     if (idade >= 10 and idade <= 30) and altura > 1.90:
         idade10e30Altura190 += 1
